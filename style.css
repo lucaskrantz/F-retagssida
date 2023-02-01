@@ -68,6 +68,20 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+footer h1 {
+    float: left;
+    font-size: 15px;
+    margin-right: 10px;
+    display: inline;
+}
+
+footer h2 {
+    float: right;
+    font-size: 15px;
+    margin-right: 10px;
+    display: inline;
+}
+
 
 
 
@@ -95,15 +109,6 @@ footer {
     text-decoration: none;
 }
 
-.start:hover {
-    color: whitesmoke;
-
-}
-
-h1,
-h2 {
-    display: inline;
-}
 
 h3 {
     font-size: 20px;
@@ -121,20 +126,16 @@ h4 {
     color: #18272F
 }
 
-h1 {
-    float: left;
-    font-size: 15px;
-    margin-right: 10px;
+.recipe-desc {
+
+    text-align: center;
 }
 
 
 
 
-h2 {
-    float: right;
-    font-size: 15px;
-    margin-right: 10px;
-}
+
+
 
 .topnav input[type=text] {
     float: right;
@@ -146,6 +147,7 @@ h2 {
     margin-bottom: 8px;
     font-size: 17px;
 }
+
 
 
 nav a {
@@ -275,37 +277,27 @@ p {
     border: none;
     color: white;
 
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     padding: 10px;
-    margin-left: 35%;
+    margin-bottom: 3%;
+
 }
 
-
-
-
-@media screen and (max-width: 600px) {
-
-    .topnav a,
-    .topnav input[type=text] {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-
-    .topnav input[type=text] {
-        border: 1px solid #ccc;
-    }
+.topnav a,
+.topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    margin-top: 8px;
 }
 
-.recipe {
+.dish {
     display: grid;
     grid-template-columns: 60% 40%;
     width: 70%;
@@ -317,11 +309,11 @@ p {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
 }
 
-.recipe div img {
+.dish div img {
     width: 100%;
 }
 
-.recipe img {
+.dish img {
     border-radius: 10px;
 
 }
@@ -376,7 +368,143 @@ a[href^="tel:"] {
 
 }
 
-a:focus, button:focus {
-    background-color: yellow !important;
+a:focus,
+button:focus {
+    background-color: white !important;
     color: black;
+}
+
+
+
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    background-color: #FBFAF5;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.recipe img {
+    width: 100%;
+}
+
+.recipe-header {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.recipe-text {
+    font-size: 20px;
+    padding: 10px;
+
+
+}
+
+.recipe-ingredients,
+.recipe-instructions {
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.recipe-ingredients-group {
+    background-color: #FBFAF5;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.recipe-ingredients-group li {
+    margin-left: 5%;
+    margin-top: 3%;
+    font-size: 20px;
+    list-style: none;
+}
+
+.slidecontainer {}
+
+.slider {
+
+    display: block;
+    margin: auto;
+    height: 25px;
+    background: #d3d3d3;
+    opacity: 0.7;
+
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.Slide-text {
+    text-align: left;
+    margin-left: 3%;
+}
+
+.recipe-instructions-group {
+    background-color: #FBFAF5;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+.recipe-instructions-group li {
+    margin-left: 5%;
+    margin-top: 3%;
+    font-size: 20px;
+
+}
+
+
+
+#link-list {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#link-list li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#link-list li a:hover:not(.header) {
+    background-color: #eee;
+    /* Add a hover effect to all links, except for headers */
+}
+
+.link-container {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    /* min-width: 230px; */
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.link-container a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.link-container a:hover {
+    background-color: #b6b4b4;
 }

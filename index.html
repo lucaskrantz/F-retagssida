@@ -9,6 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" type="image/x-icon" href="a.ico">
+    <script defer src="./search.js"></script>
     <meta name="description" content="This is your favorite recipe website">
     <meta property="og:title" content=CulinaryTales>
     <meta property="og:site_name" content=CulinaryTales>
@@ -18,12 +19,14 @@
     <meta property="og:image" content="">
 </head>
 
-<body>
 
+<body>
+    
+    
     <header>
         <a href="./index.html" class="start">CulinaryTales</a>
     </header>
-
+    
     <main>
         <nav>
             <div class="dropdown">
@@ -40,7 +43,19 @@
 
 
             <div class="topnav">
-                <input type="text" placeholder="Sök efter recept...">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <div id="link-drop" class="link-container">
+                        <ul id="link-list">
+                            <li><a href="pasta.html">pasta pesto</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                    
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
 
         </nav>
@@ -50,13 +65,13 @@
 
         <div class="recipe">
             <div>
-                <img src="DALLE2-pasta.jpg" alt="En bild på pesto pasta">
+                <img src="pesto-pasta.jpg" alt="En bild på pasta med pesto">
             </div>
-            <div>
+            <div class="recipe-desc">
                 <h3>Månadens rätt</h3>
                 <h4>Trofie a la pesto</h4>
                 <p>Lätt att laga, med bara några få steg, och jättegod!</p>
-                <button class="button" onclick="window.location.href='./recept.html'">Visa recept</button>
+                <button class="button" onclick="window.location.href='./pasta.html'">Visa recept</button>
             </div>
         </div>
 

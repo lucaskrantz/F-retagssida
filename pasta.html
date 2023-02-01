@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>CulinaryTales</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="a.ico">
+    <script defer src="./app.js"></script>
+    <script defer src="./search.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html" class="start">CulinaryTales</a>
+    </header>
+
+    <main>
+        <nav>
+            <div class="dropdown">
+                <button onclick="window.location.href='./recept.html'; " class="dropbtn">Recept
+                </button>
+                <div class="dropdown-content">
+                    <a href="./recept.html">Populärt</a>
+                    <a href="./recept.html">Vegetariskt</a>
+                    <a href="./recept.html">Snabbt</a>
+                </div>
+            </div>
+            <a href="./about.html" class="om">Om oss</a>
+            <a href="./contact.html" class="kontakt">Kontakta</a>
+
+
+            <div class="topnav">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <div id="link-drop" class="link-container">
+                        <ul id="link-list">
+                            <li><a href="pasta.html">pasta pesto</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="recipe">
+            <div><img src="./pesto-pasta.jpg" alt="Bild på pasta med pesto"></div>
+            <div>
+                <h1 class="recipe-header">Pasta a la pesto</h1>
+            </div>
+            <div class="recipe-text-container">
+                <p class="recipe-text">Pasta med pesto är en italiensk maträtt som består av pasta som serveras med en
+                    grön pestosås. Pestosåsen är gjord av färska basilikablad, pinjenötter, parmesanost, vitlök och
+                    olja. Allt detta mixas ihop till en krämig sås som sedan blandas med den kokta pastan. Pasta med
+                    pesto är en enkel och smakrik rätt som är populär i många länder runt om i världen. </p>
+                <p class="recipe-text"> Denna maträtt har sitt ursprung i Genua i norra Italien, där den har ätits sedan
+                    1600-talet. Pesto såsen som vi känner den idag utvecklades under 1800-talet när man började använda
+                    basilika och pinjenötter i stället för den tidigare vanliga såsen som gjordes av nötter och sparris.
+                </p>
+                <hr>
+            </div>
+            <div class="recipe-container">
+                <h1 class="recipe-ingredients">Ingredients:</h1>
+                <div class="slide-container">
+                    <p class="Slide-text">Servings:</p>
+                    <input type="range" id="servings" name="servings" min="2" max="10" step="2" class="slider"
+                        value="2">
+                    <!--Populated by javascript-->
+                    <p id="peopleCount">2</p>
+                </div>
+                <div class="recipe-ingredients-group">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span class="amount" data-amount="30">60</span> ml färsk basilika
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span class="amount" data-amount="112.5">225</span> gram pasta, valfri sort
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span class="amount" data-amount="12.5">25</span> gram pinjenötter
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span class="amount" data-amount="1">2</span> vitlöksklyftor
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span class="amount" data-amount="30">60</span> ml olivolja
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                <span class="amount" data-amount="12.5">25</span> gram riven parmesanost
+                            </label>
+                        </li>
+                    </ul>
+                    <hr>
+
+
+                </div>
+                <div>
+                    <h1 class="recipe-instructions">Instruktioner</h1>
+                </div>
+                <div class="recipe-instructions-group">
+                    <ul>
+                        <li>
+                            <label>
+                                Koka pastan enligt anvisningarna på förpackningen.
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Under tiden, blanda basilika, pinjenötter, parmesanost, olivolja och vitlök i en
+                                matberedare. Mixa tills peston är jämn och slät. </label>
+                        </li>
+                        <li>
+                            <label>
+                                Häll av pastan och blanda med peston. Smaka av med salt och peppar efter behag. </label>
+                        </li>
+                        <li>
+                            <label>
+                                Servera pastan med pesto och garnera med lite extra parmesanost och färska basilikablad.
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+    <div class="push"></div>
+    <footer class="footer">
+        <h1>Copyright Solutions</h1>
+        <h2>Receptia 2022</h2>
+    </footer>
+</body>
+
+</html>
