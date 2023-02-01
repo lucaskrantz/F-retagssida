@@ -270,7 +270,7 @@ p {
 
 .button {
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #378339;
 
     border: none;
     color: white;
@@ -372,6 +372,11 @@ a[href^="tel:"] {
 
     text-decoration: none;
     border-bottom: dashed;
-    
 
+
+}
+
+a:focus, button:focus {
+    background-color: yellow !important;
+    color: black;
 }
